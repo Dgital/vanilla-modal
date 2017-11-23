@@ -226,7 +226,7 @@
           this.releaseNode(this.current);
         }
         this.current = getElementContext(allMatches);
-        if (!(this.current instanceof HTMLElement === false)) {
+        if (this.current instanceof HTMLElement === false) {
           throwError('VanillaModal target must exist on page.');
           return;
         }
